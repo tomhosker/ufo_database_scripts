@@ -35,3 +35,5 @@ echo "deb $POSTGRES_URL_SHORT `lsb_release -cs`-pgdg main" | \
 sudo curl $PGADMIN_URL_SHORT | sudo apt-key add
 to_echo="deb $PGADMIN_URL_LONG pgadmin4 main"
 sudo sh -c "echo $to_echo > /etc/apt/sources.list.d/pgadmin4.list && apt update"
+sudo apt update
+sudo apt install pgadmin4
