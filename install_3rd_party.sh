@@ -40,7 +40,7 @@ sudo apt install postgresql-client-$POSTGRES_VERSION
 sudo curl $PGADMIN_URL_SHORT | sudo apt-key add
 sudo sh -c "echo \"$PGADMIN_TO_ECHO\" > $PGADMIN_PATH && apt update"
 sudo apt update
-sudo apt install pgadmin4
+sudo apt install pgadmin4 --yes
 
 ###################
 # INSTALL POSTGIS #
