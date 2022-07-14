@@ -30,8 +30,8 @@ wget --quiet -O - $PGP_KEY_URL | sudo apt-key add -
 ######################
 
 echo "deb $POSTGRES_URL" | sudo tee /etc/apt/sources.list.d/pgdg.list
-sudo apt install postgresql-$POSTGRES_VERSION
-sudo apt install postgresql-client-$POSTGRES_VERSION
+sudo apt install postgresql-$POSTGRES_VERSION --yes
+sudo apt install postgresql-client-$POSTGRES_VERSION --yes
 
 ###################
 # INSTALL PGADMIN #
